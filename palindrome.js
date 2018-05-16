@@ -1,15 +1,18 @@
 /* Given a string, return true if it is a palindrome, otherwise return false */
 
 function palindrome(str) {
-  let re = /[^A-Z0-9]+/ig;
-  let cleanedStr = str.replace(re, '');
-  let loweredStr = cleanedStr.toLowerCase();
-  let reversedStr = loweredStr
-    .split('')
-    .reverse()
-    .join('');
-
-  return loweredStr === reversedStr;
+  // let re = /[^A-Z0-9]+/ig;
+  // let cleanedStr = str.replace(re, '');
+  // let loweredStr = cleanedStr.toLowerCase();
+  // let reversedStr = loweredStr
+  //   .split('')
+  //   .reverse()
+  //   .join('');
+  
+  let cleanedStr = str.replace(/[^A-Z0-9]+/ig, '').toLowerCase();
+  let reversedStr = cleanedStr.split('').reverse().join('');
+  
+  return cleanedStr === reversedStr;
 }
 
 // Test code
