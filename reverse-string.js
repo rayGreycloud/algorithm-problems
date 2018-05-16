@@ -1,11 +1,16 @@
 /* Given a string, reverse the characters of the strings and output the reversed string */
 
 function reverseString(str) {
-  const letters = str.split('');
-  const reversedLetters = letters.reverse();
-  const reversedStr = reversedLetters.join('');
+  // const letters = str.split('');
+  // const reversedLetters = letters.reverse();
+  // const reversedStr = reversedLetters.join('');
+  //
+  // return reversedStr;
 
-  return reversedStr;
+  return str
+    .split('')
+    .reverse()
+    .join('');
 }
 
 // Test code
