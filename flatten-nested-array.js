@@ -1,4 +1,6 @@
-
+/*
+  Flatten nested array(s).
+*/
 
 function steamrollArray(arr) {
   let array = [];
